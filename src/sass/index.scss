@@ -1,0 +1,26 @@
+@import './utilities/variables';
+@import './utilities/functions';
+@import './utilities/mixins';
+// @import './utilities/bootstrap';
+
+@import './base/typo';
+@import './base/reset';
+
+@import './layout/navigation';
+@import './layout/grid';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/forms';
+
+@import './components/buttons';
+
+@import './pages/home';
+@import './pages/contact';
+
+
+
+
+
+.main{
+    grid-area: main;
+}

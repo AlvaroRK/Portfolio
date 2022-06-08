@@ -1,0 +1,107 @@
+.header{
+    @include flex(row, wrap, space-around, center);
+    height: auto;
+    background-color: #1a1a1a7d;
+
+    .logo{
+        color: $azulClaro;
+        font-size: 35px;
+        font-family: $oswald;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    @include media(){
+        height: 8vh;
+
+        @include flex(row, nowrap, space-around, center);
+    }
+
+
+    .button{
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        @include media(){ 
+            display: none;
+        }
+
+        .svg{
+            color: $azulClaro;
+            height: 2.5em;
+            width: 2.5em;
+        }
+     }
+
+    .nav{
+        background-color: rgba(26, 26, 26, 0);
+        opacity: 0;
+        height: 0vh;
+        pointer-events:none;
+        overflow: hidden;
+        transition: all .5s ease;
+
+        @include flex(column, nowrap, center, center);
+
+        &.activo{
+            opacity: 1;
+            height: 50vh;
+            pointer-events: auto;
+        }
+
+        
+
+        @include media(){
+            opacity: 1;
+            height: auto;
+            pointer-events:auto;
+            overflow: none;
+            transition: none;
+        }
+
+        ul{
+            
+            @include media(){
+                @include flex(row, nowrap, center, center);
+            }
+
+            li{
+
+                margin: .5em 0;
+
+                @include media(){
+                    margin: 0 1.5rem;
+                    list-style: none;
+                }
+
+                 a{ 
+                    text-align: center;
+                    display: block;
+                    width:100vw;
+                    line-height: 70px;
+                    text-decoration: none;
+                    color: $azulClaro;
+                    font-size: 24px;
+                    font-family: $openSans;
+                    font-weight: bold;
+
+                    &:hover{
+                        background-color: $negroOscuro;
+                    }
+
+                    @include media(){
+                        display: block;
+                        width: auto;
+
+                        &:hover{
+                            background: none;
+                        }
+                        
+                    }
+                }
+            }
+        }
+     }
+}
