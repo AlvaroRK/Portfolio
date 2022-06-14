@@ -6,14 +6,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.container {
-  background-image: url(../../../public/assets/img/html2.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,10 +21,12 @@
           align-items: center;
   height: auto;
   background-color: #1a1a1a7d;
+  position: fixed;
+  top: 0;
 }
 
 .header .logo {
-  color: #1466c3;
+  color: #1E69EA;
   font-size: 35px;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
@@ -41,6 +35,9 @@
 
 @media only screen and (min-width: 700px) {
   .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
     height: 8vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -71,7 +68,7 @@
 }
 
 .header .button .svg {
-  color: #1466c3;
+  color: #1E69EA;
   height: 2.5em;
   width: 2.5em;
 }
@@ -151,14 +148,14 @@
   width: 100vw;
   line-height: 70px;
   text-decoration: none;
-  color: #1466c3;
+  color: #1E69EA;
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
 .header .nav ul li a:hover {
-  background-color: #000000;
+  background-color: #15151c;
 }
 
 @media only screen and (min-width: 700px) {
@@ -179,5 +176,92 @@
 }
 
 .main {
-  grid-area: main;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* -----aboutMe----- */
+}
+
+.main .info {
+  height: auto;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.main .info img {
+  width: 100%;
+}
+
+.main .info .info-content {
+  text-align: justify;
+}
+
+.main .info .info-content h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #1E69EA;
+}
+
+.main .info .info-content p {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.main .info .info-content a {
+  text-decoration: none;
+}
+
+.main .info .info-content a button {
+  background-color: #1E69EA;
+  padding: 10px 15px;
+  border-radius: 50px;
+  margin-top: 5px;
+  border: none;
+}
+
+.main .info .info-content a button:hover {
+  background-color: #256eff;
+}
+
+@media only screen and (min-width: 700px) {
+  .main .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse nowrap;
+            flex-flow: row-reverse nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  .main .info img {
+    width: 40%;
+  }
+  .main .info .info-content {
+    width: 40%;
+    margin: 50px;
+  }
+  .main .info .info-content h1 {
+    text-align: start;
+  }
+}
+
+.main .aboutMe {
+  background-color: #435959;
+}
+
+.container {
+  background-color: #15151c;
+  width: 100%;
+  height: 100vh;
 }
