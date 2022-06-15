@@ -1,0 +1,16 @@
+.btn__cv{
+    text-decoration: none;
+
+    button{
+        background-color: $azulClaro;
+        padding: 10px 15px;
+        border-radius: 50px;
+        margin-top: 5px;
+        border: none;
+        color: #fff;
+
+        &:hover{
+            background-color: rgb(37, 110, 255);
+        }
+    }
+}

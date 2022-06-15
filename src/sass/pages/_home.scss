@@ -1,10 +1,11 @@
 .main{
-    height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    
 
     .info{
-        height: auto;
+        @include flex (column, nowrap, center, auto);
+        height: 100vh;
         width: 80vw;
         margin: 0 auto;
 
@@ -13,33 +14,18 @@
         }
 
         .info-content{
-            text-align: justify;
+            text-align: center;
             h1{
                 text-align: center;
-                font-size: 32px;
+                font-size: 50px;
                 color: $azulClaro;
+                font-family: $oswald;
             }
 
-            p{
+            h2{
+                font-size: 32px;
                 color: #fff;
                 margin: 10px 0;
-            }
-
-            a{
-                text-decoration: none;
-          
-
-                button{
-                    background-color: $azulClaro;
-                    padding: 10px 15px;
-                    border-radius: 50px;
-                    margin-top: 5px;
-                    border: none;
-
-                    &:hover{
-                        background-color: rgb(37, 110, 255);
-                    }
-                }
             }
         }
     }
@@ -49,8 +35,6 @@
             
             @include flex(row-reverse, nowrap, center, center);
 
-            height: auto;
-
             img{
                 width: 40%;
             }
@@ -58,6 +42,7 @@
             .info-content{
                 width: 40%;
                 margin: 50px;
+                text-align: start;
 
                 h1{
                     text-align: start;
@@ -70,7 +55,61 @@
     /* -----aboutMe----- */
 
     .aboutMe{
-        background-color: rgb(67, 89, 89);
+        height: 100vh;
+        background-color: $negroClaro;
+        @include flex (column, nowrap, center, auto);
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .me{
+            text-align: justify;
+            @include flex (column, nowrap, auto, center);
+
+            h2{
+                width: max-content;
+                margin: 1.5rem auto;
+                color: $azulClaro;
+                background-color: $negroOscuro;
+                border-radius: 25px;
+                padding: 10px 15px;
+
+                &:hover{
+                    background-color: $azulClaro;
+                    color: #fff;
+                }
+            }
+
+            p{
+                color: #fff;
+                padding: 0 7%;
+            }
+
+            .btn__cv{
+                margin-top: 1rem;
+            }
+        }
     }
 
+    @include media(){
+        .aboutMe{
+
+            @include flex (row, wrap, center, center);
+
+            img{
+                width: 35%;
+            }
+
+            .me{
+                width: 30%;
+
+                p{
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
+

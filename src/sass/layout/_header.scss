@@ -47,6 +47,7 @@
         pointer-events:none;
         overflow: hidden;
         transition: all .5s ease;
+        font-family: $openSans;
 
         @include flex(column, nowrap, center, center);
 
@@ -102,10 +103,9 @@
                         &:hover{
                             background: none;
                         }
-                        
                     }
                 }
             }
         }
-     }
+    }
 }

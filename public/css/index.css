@@ -81,6 +81,7 @@
   overflow: hidden;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  font-family: "Open Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,19 +176,49 @@
   background-color: aquamarine;
 }
 
+.btn__cv {
+  text-decoration: none;
+}
+
+.btn__cv button {
+  background-color: #1E69EA;
+  padding: 10px 15px;
+  border-radius: 50px;
+  margin-top: 5px;
+  border: none;
+  color: #fff;
+}
+
+.btn__cv button:hover {
+  background-color: #256eff;
+}
+
 .main {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /* -----aboutMe----- */
 }
 
 .main .info {
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  height: 100vh;
   width: 80vw;
   margin: 0 auto;
 }
@@ -197,34 +228,20 @@
 }
 
 .main .info .info-content {
-  text-align: justify;
+  text-align: center;
 }
 
 .main .info .info-content h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 50px;
   color: #1E69EA;
+  font-family: "Oswald", sans-serif;
 }
 
-.main .info .info-content p {
+.main .info .info-content h2 {
+  font-size: 32px;
   color: #fff;
   margin: 10px 0;
-}
-
-.main .info .info-content a {
-  text-decoration: none;
-}
-
-.main .info .info-content a button {
-  background-color: #1E69EA;
-  padding: 10px 15px;
-  border-radius: 50px;
-  margin-top: 5px;
-  border: none;
-}
-
-.main .info .info-content a button:hover {
-  background-color: #256eff;
 }
 
 @media only screen and (min-width: 700px) {
@@ -242,7 +259,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: auto;
   }
   .main .info img {
     width: 40%;
@@ -250,6 +266,7 @@
   .main .info .info-content {
     width: 40%;
     margin: 50px;
+    text-align: start;
   }
   .main .info .info-content h1 {
     text-align: start;
@@ -257,7 +274,96 @@
 }
 
 .main .aboutMe {
-  background-color: #435959;
+  height: 100vh;
+  background-color: #1a1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+}
+
+.main .aboutMe img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .aboutMe .me {
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .aboutMe .me h2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 1.5rem auto;
+  color: #1E69EA;
+  background-color: #15151c;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.main .aboutMe .me h2:hover {
+  background-color: #1E69EA;
+  color: #fff;
+}
+
+.main .aboutMe .me p {
+  color: #fff;
+  padding: 0 7%;
+}
+
+.main .aboutMe .me .btn__cv {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .main .aboutMe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .aboutMe img {
+    width: 35%;
+  }
+  .main .aboutMe .me {
+    width: 30%;
+  }
+  .main .aboutMe .me p {
+    padding: 0;
+  }
 }
 
 .container {
