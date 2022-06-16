@@ -4,6 +4,8 @@
     background-color: #1a1a1a7d;
     position: fixed;
     top: 0;
+    z-index: 100;
+    backdrop-filter: blur(3px);
 
     .logo{
         color: $azulClaro;

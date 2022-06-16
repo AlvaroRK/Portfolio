@@ -23,6 +23,9 @@
   background-color: #1a1a1a7d;
   position: fixed;
   top: 0;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .header .logo {
@@ -202,6 +205,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   /* -----aboutMe----- */
+  /* ----- Proyects ----- */
 }
 
 .main .info {
@@ -364,6 +368,190 @@
   .main .aboutMe .me p {
     padding: 0;
   }
+}
+
+.main .proyects {
+  height: 100%;
+}
+
+.main .proyects h2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 4rem auto;
+  color: #1E69EA;
+  background-color: #1a1a1a;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.main .proyects h2:hover {
+  background-color: #1E69EA;
+  color: #fff;
+}
+
+.main .proyects .proyectos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.main .proyects .proyectos .proyect {
+  display: block;
+  width: 80%;
+  height: 15rem;
+  margin: 15px 0;
+}
+
+.main .proyects .proyectos .proyect:nth-child(1) {
+  background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .proyects .proyectos .proyect:nth-child(2) {
+  background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .proyects .proyectos .proyect:nth-child(3) {
+  background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .proyects .proyectos .proyect:nth-child(4) {
+  background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .proyects .proyectos .proyect:nth-child(5) {
+  background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .proyects .proyectos .proyect:nth-child(6) {
+  background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .proyects .proyectos .proyect:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.main .proyects .proyectos .proyect .blur {
+  background-color: #1e69ea63;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .proyects .proyectos .proyect .blur:hover {
+  opacity: 1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.main .proyects .proyectos .proyect .blur h4 {
+  font-size: 24px;
+}
+
+.main .proyects .proyectos .proyect .blur h4 a {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.main .proyects .proyectos .proyect .blur h4 a:hover {
+  color: #fff;
+}
+
+.main .proyects .proyectos .proyect .blur h4:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.main .proyects .proyectos .proyect .blur i {
+  position: relative;
+  top: 4rem;
+  font-size: 40px;
+  color: #f0f6fc;
+  background-color: #1a1a1a;
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 700px) {
+  .main .proyects {
+    margin: auto;
+    width: 90%;
+    height: 100vh;
+  }
+  .main .proyects h2 {
+    margin-top: 6rem;
+  }
+  .main .proyects .proyectos {
+    background-color: #1a1a1a;
+  }
+  .main .proyects .proyectos .proyect {
+    width: 32%;
+  }
+}
+
+.main .tecno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  margin: 60px 0;
+}
+
+.main .tecno i {
+  font-size: 50px;
+  margin: 10px 20px;
+  color: #f0ffff;
 }
 
 .container {
