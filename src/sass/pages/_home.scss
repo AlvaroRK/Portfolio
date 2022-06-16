@@ -69,6 +69,8 @@
             @include flex (column, nowrap, auto, center);
 
             h2{
+                font-family: $oswald;
+                font-size: 26px;
                 width: max-content;
                 margin: 1.5rem auto;
                 color: $azulClaro;
@@ -118,6 +120,8 @@
         height: 100%;
 
         h2{
+            font-family: $oswald;
+            font-size: 26px;
             width: max-content;
             margin: 4rem auto;
             color: $azulClaro;
@@ -142,19 +146,19 @@
                 margin: 15px 0;
 
                 &:nth-child(1){
-                    background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+                    background-image: url(/public/assets/img/Estadio-1.jpeg);
                     background-repeat: no-repeat;
                     background-size: cover;
                 }
 
                 &:nth-child(2){
-                    background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+                    background-image: url(/public/assets/img/Estadio-1.jpeg);
                     background-repeat: no-repeat;
                     background-size: cover;
                 }
 
                 &:nth-child(3){
-                    background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+                    background-image: url(/public/assets/img/Estadio-1.jpeg);
                     background-repeat: no-repeat;
                     background-size: cover;
                 }

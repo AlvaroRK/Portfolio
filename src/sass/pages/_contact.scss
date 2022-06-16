@@ -1,0 +1,40 @@
+.main{
+    .contact{
+        background-color: $negroClaro;
+
+        @include flex (column, nowrap, center, center);
+
+        h2{
+            font-family: $oswald;
+            font-size: 26px;
+            width: max-content;
+            margin: 3rem auto;
+            color: $azulClaro;
+            background-color: $negroOscuro;
+            border-radius: 25px;
+            padding: 10px 15px;
+
+            &:hover{
+                background-color: $azulClaro;
+                color: #fff;
+            }
+        }
+    }
+
+    @include media (){
+        .contact{
+
+            .form{
+                width: 40%;
+                
+                input{
+                    font-size: 16px;
+                }
+
+                textarea{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

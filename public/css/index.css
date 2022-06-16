@@ -6,76 +6,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: auto;
-  background-color: #1a1a1a7d;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-}
-
-.header .logo {
-  color: #1E69EA;
-  font-size: 35px;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 700px) {
-  .header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.header .button {
-  display: block;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-@media only screen and (min-width: 700px) {
-  .header .button {
-    display: none;
-  }
-}
-
-.header .button .svg {
-  color: #1E69EA;
-  height: 2.5em;
-  width: 2.5em;
-}
-
 .header .nav {
   background-color: rgba(26, 26, 26, 0);
   opacity: 0;
@@ -172,11 +102,147 @@
   }
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  background-color: #1a1a1a7d;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.header .logo {
+  color: #1E69EA;
+  font-size: 35px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header .button {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  .header .button {
+    display: none;
+  }
+}
+
+.header .button .svg {
+  color: #1E69EA;
+  height: 2.5em;
+  width: 2.5em;
+}
+
 .footer {
-  display: -ms-grid;
-  display: grid;
-  grid-area: footer;
-  background-color: aquamarine;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+}
+
+.footer .redes i {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.main .contact .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.main .contact .form input {
+  width: 100%;
+  margin-bottom: 30px;
+  line-height: 30px;
+  background: #15151c;
+  border: none;
+  border-bottom: 2px solid #1E69EA;
+  color: #fff;
+  outline: none;
+}
+
+.main .contact .form textarea {
+  margin-bottom: 30px;
+  padding-left: 5px;
+  min-height: 100px;
+  max-height: 200px;
+  overflow: auto;
+  max-width: 100%;
+  min-width: 100%;
+  background: none;
+  border: none;
+  border-left: 2px solid #1E69EA;
+  border-right: 2px solid #1E69EA;
+  background-color: #15151c;
+  color: #fff;
+  outline: none;
 }
 
 .btn__cv {
@@ -319,6 +385,8 @@
 }
 
 .main .aboutMe .me h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -375,6 +443,8 @@
 }
 
 .main .proyects h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -414,19 +484,19 @@
 }
 
 .main .proyects .proyectos .proyect:nth-child(1) {
-  background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+  background-image: url(/public/assets/img/Estadio-1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .main .proyects .proyectos .proyect:nth-child(2) {
-  background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+  background-image: url(/public/assets/img/Estadio-1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .main .proyects .proyectos .proyect:nth-child(3) {
-  background-image: url(../../../public/assets/img/Estadio-1.jpeg);
+  background-image: url(/public/assets/img/Estadio-1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -552,6 +622,53 @@
   font-size: 50px;
   margin: 10px 20px;
   color: #f0ffff;
+}
+
+.main .contact {
+  background-color: #1a1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .contact h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 3rem auto;
+  color: #1E69EA;
+  background-color: #15151c;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.main .contact h2:hover {
+  background-color: #1E69EA;
+  color: #fff;
+}
+
+@media only screen and (min-width: 700px) {
+  .main .contact .form {
+    width: 40%;
+  }
+  .main .contact .form input {
+    font-size: 16px;
+  }
+  .main .contact .form textarea {
+    font-size: 16px;
+  }
 }
 
 .container {
